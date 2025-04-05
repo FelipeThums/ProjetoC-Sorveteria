@@ -95,5 +95,30 @@ namespace SorveteriaZequinha
             HabilitarCampos();
             
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text.Equals("")
+                || txtEmail.Text.Equals("")
+                || mskCPF.Text.Equals("   .   .   -")
+                || cbbFuncao.Text.Equals("")
+                || cbbEstado.Text.Equals("")
+                || mskTelefone.Text.Equals("     -")
+                || mskCEP.Text.Equals("")
+                || mskCPF.Text.Equals("")
+                || txtLogradouro.Text.Equals("")
+                || txtNumero.Text.Equals("")
+                || txtCidade.Text.Equals("")
+                || cbbEstado.Text.Equals("")
+                || cbbUF.Text.Equals("")
+                ||txtComplemento.Text.Equals(""))
+            {
+                MessageBox.Show("Favor inserir valores");
+            }
+            else
+            {
+                MessageBox.Show("Cadastro com sucesso!!");
+            }
+        }
     }
 }
